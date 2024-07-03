@@ -7,9 +7,14 @@ app.get("/", (req, res) => {
   res.send("Welcome to nodejs");
 });
 
+app.post("/", (req, res) => {
+  res.status(405);
+});
+
 app.get("/hello", (req, res) => {
   res.send("hello world");
 });
+
 
 const start = () => {
   app.listen(port, () => {
