@@ -4,6 +4,10 @@ const app = express();
 const port = 2222;
 
 app.get("/", (req, res) => {
+  res.send("Welcome to nodejs");
+});
+
+app.get("/hello", (req, res) => {
   res.send("hello world");
 });
 
