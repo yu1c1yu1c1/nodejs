@@ -2,7 +2,7 @@ import express from "express";
 const app = express();
 app.use(express.static("../frontend"))
 
-const HOST = "0.0.0.0";
+// const HOST = "0.0.0.0";
 const PORT = 2222;
 
 const methodNotAllowed = (req, res, next) => res.status(405).send();
@@ -18,8 +18,9 @@ app.get("/about", (req, res) => {
 });
 
 const start = () => {
-  app.listen(PORT, HOST, () => {
-    console.log(`Server started at ${HOST}:${PORT}`);
+  app.listen(PORT, () => {
+    // console.log(`Server started at ${HOST}:${PORT}`);
+    console.log(`Server started at ${PORT}`);
   });
 };
 
