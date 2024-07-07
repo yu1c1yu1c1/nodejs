@@ -13,8 +13,8 @@ app.get("/", (req, res) => {
 
 app.all("/", methodNotAllowed);
 
-app.get("/", (req, res) => {
-  res.send("Welcome to nodejs");
+app.get("/about", (req, res) => {
+  res.send("Welcome to about page");
 });
 
 const start = () => {
