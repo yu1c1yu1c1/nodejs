@@ -1,6 +1,6 @@
 import express from "express";
 const app = express();
-app.use(express.static("../frontend"))
+app.use(express.static("../frontend"));
 
 // const HOST = "0.0.0.0";
 const PORT = 2222;

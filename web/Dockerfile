@@ -14,4 +14,5 @@ RUN npm install
 
 EXPOSE 2222
 
-CMD ["npm", "start"]
+CMD ["node", "app.mjs"]
+# CMD ["npm", "start"]
